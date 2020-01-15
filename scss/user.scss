@@ -1,0 +1,79 @@
+// 
+// 
+// user.scss
+//
+// Place your own custom CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+//
+//
+//
+//    font-family: 'Corben', cursive;
+//
+//    font-family: 'Quattrocento Sans', sans-serif;
+//
+// GENERAL SITEWIDE STYLES
+body {
+    color: black;
+    font-family: 'Quattrocento Sans', apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Corben', Georgia, serif;
+    font-weight: 300 !important;
+}
+
+.btn-solo {
+    color: black;
+}
+
+.btn-solo:hover,
+.btn-solo:focus {
+    color: $primary-3;
+}
+
+.overlap {
+    position: absolute;
+}
+
+.link-alt {
+    color: $primary-3;
+}
+
+.process-num {
+    position: absolute;
+    top: 10%;
+    color: $primary;
+    font-size: 3000%;
+    line-height: 70%;
+    z-index: -10;
+    left: 20%;
+    font-weight: 700;
+}
+
+.text-muted {
+    color: #B5EAFE !important;
+}
+
+//temp solution for a section image dangling off into another section
+.color-dangler {
+    box-shadow: inset 0 -263px 0 white;
+}
+
+// NAVIGATION BAR
+.navbar {
+    border-bottom: none;
+}
+
+.navbar a {
+    font-weight: 300;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: $primary-3;
+}

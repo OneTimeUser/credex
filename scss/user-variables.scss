@@ -1,0 +1,24 @@
+// TO STRIKE:
+// jquery.countdown.min.js, countup.js, prism.js, jquery.fancybox.min.js, scrollMonitor.js, twitterFetcher_min.js, typed.min.js
+//
+//
+//
+//
+// user-variables.scss
+//
+// Place your own variable overrides here, these will override any Bootstrap and theme variables.
+// Color Scheme
+// Uncomment the variables below and change the hex values.
+$primary: #3FA8FF;
+$primary-2: #FF4ADD;
+$primary-3: #435BE8;
+//#lightblue #EBF3FF
+// Do not change or remove the $theme-color-scheme or $theme-colors maps below
+$theme-color-scheme: ( "primary": $primary,
+"primary-2": $primary-2,
+"primary-3": $primary-3);
+
+$theme-colors: ( "primary": $primary,
+"primary-2": $primary-2,
+"primary-3": $primary-3,
+);
