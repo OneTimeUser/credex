@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CredEx</title>
+    <title>CredEx - Get Started</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A friendly credential evaluation service">
     <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
@@ -113,7 +113,7 @@
 
                 <div class="col-md-9 col-lg-8 col-xl-6">
                     <div class="text-center mb-4">
-                        <h2 class="display-4">Leave a message</h2>
+                        <h2 class="display-4">Let's Get Started!</h2>
                         <p class="lead">Fill out the form below to get started. After your submit, a counselor will get in touch with you to talk about next steps!
                         </p>
                     </div>
@@ -136,20 +136,36 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Company Name</label>
-                                    <input name="contact-company" type="text" class="form-control" required>
+                                    <label>Type of Evaluation *</label>
+                                    <select name="contact-type" type="text" class="form-control" required>
+                                        <option>Immigration</option>
+                                        <option>Education</option>
+                                        <option>Other</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>Contact Number</label>
-                                    <input name="contact-phone" type="tel" class="form-control" required>
+                                    <label>If you have a preferred credential evaluator, please list them below.</label>
+                                    <input name="contact-preference" type="text" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <label>Message:</label>
-                                    <textarea class="form-control" name="contact-message" rows="10" placeholder="How can we help?"></textarea>
+                                    <label>Please list prospective recipient(s) and corresponding application deadline(s).</label>
+                                    <textarea class="form-control" name="contact-recipient" rows="3" placeholder="e.g. Canadian Immigration - January 1, 2020"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label>Please list your relevant educational history accordingly:<br/> School Name, Country, Degree type, Year Awarded.</label>
+                                    <textarea class="form-control" name="contact-education" rows="3" placeholder="e.g. International University, Australia, Masters of Engineering, 2020"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label>Additional Information</label>
+                                    <textarea class="form-control" name="contact-message" rows="10" placeholder="Any information you would like us to know?"></textarea>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -164,7 +180,7 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-loading" data-loading-text="Sending">
                     <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
-                    <span>Send Enquiry</span>
+                    <span>Send Inquiry</span>
                   </button>
                             </div>
                         </div>
