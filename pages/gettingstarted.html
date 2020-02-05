@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CredEx - Get Started</title>
+    <title>Émigré - Get Started</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A friendly credential evaluation service">
+    <meta name="description" content="A friendly credential evaluation service | Let's get started!">
     <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Corben|Quattrocento+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-primary" data-sticky="top">
             <div class="container">
                 <a class="navbar-brand fade-page" href="index.html">
-            CredEX
+            Émigré
           </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
             <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
@@ -83,7 +83,7 @@
                                 <input type="email" class="form-control" name="contact-email" placeholder="Email Address" required>
                             </div>
                             <div class="form-group">
-                                <textarea name="contact-box-message" rows="5" class="form-control" placeholder="Type your message here" required></textarea>
+                                <textarea name="contact-box-message" rows="5" class="form-control" placeholder="Message" required></textarea>
                             </div>
                             <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE"></div>
                             <div class="d-none alert alert-danger" role="alert" data-error-message>
@@ -138,15 +138,15 @@
                                 <div class="form-group">
                                     <label>Type of Evaluation *</label>
                                     <select name="contact-type" type="text" class="form-control" required>
-                                        <option>Immigration</option>
-                                        <option>Education</option>
-                                        <option>Other</option>
+                                        <option>Immigration - US</option>
+                                       <option>Immigration - Canada</option> <option>Education</option>
+                                        <option>Other - Explain in message box below.</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>If you have a preferred credential evaluator, please list them below.</label>
+                                    <label>If you have a preferred credential evaluator, please name them below.</label>
                                     <input name="contact-preference" type="text" class="form-control" required>
                                 </div>
                             </div>
@@ -156,10 +156,61 @@
                                     <textarea class="form-control" name="contact-recipient" rows="3" placeholder="e.g. Canadian Immigration - January 1, 2020"></textarea>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="form-row">
+                                <label>Please list your relevant educational history.</label>
+                                <div class="form-group md-4">
+                                    <label>School Name</label>
+                                    <textarea class="form-control" name="contact-school-1" placeholder=" International University"></textarea>
+                                </div>
+                                <div class="form-group md-3">
+                                    <label>Country</label>
+                                    <textarea class="form-control" name="contact-country-1" placeholder=" Australia"></textarea>
+                                </div>
+                                <div class="form-group md-4">
+                                    <label>Degree type</label>
+                                    <textarea class="form-control" name="contact-degree-1" placeholder=" Masters of Science"></textarea>
+                                </div>
                                 <div class="form-group">
-                                    <label>Please list your relevant educational history accordingly:<br/> School Name, Country, Degree type, Year Awarded.</label>
-                                    <textarea class="form-control" name="contact-education" rows="3" placeholder="e.g. International University, Australia, Masters of Engineering, 2020"></textarea>
+                                    <label>Award Year</label>
+                                    <textarea class="form-control" name="contact-year-1" placeholder=" 2020"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+
+                                <div class="form-group md-4">
+                                    <label>School Name</label>
+                                    <textarea class="form-control" name="contact-school-2"></textarea>
+                                </div>
+                                <div class="form-group md-3">
+                                    <label>Country</label>
+                                    <textarea class="form-control" name="contact-country-2"></textarea>
+                                </div>
+                                <div class="form-group md-4">
+                                    <label>Degree type</label>
+                                    <textarea class="form-control" name="contact-degree-2"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Award Year</label>
+                                    <textarea class="form-control" name="contact-year-2"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-row">
+
+                                <div class="form-group md-4">
+                                    <label>School Name</label>
+                                    <textarea class="form-control" name="contact-school-3"></textarea>
+                                </div>
+                                <div class="form-group md-3">
+                                    <label>Country</label>
+                                    <textarea class="form-control" name="contact-country-3"></textarea>
+                                </div>
+                                <div class="form-group md-4">
+                                    <label>Degree type</label>
+                                    <textarea class="form-control" name="contact-degree-3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Award Year</label>
+                                    <textarea class="form-control" name="contact-year-3"></textarea>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -195,7 +246,7 @@
             <div class="row justify-content-between mb-5">
                 <div class="col-4">
                     <a href="index.html">
-              <img src="assets/img/logo-white.svg" alt="Leap" class="icon icon-md mb-3">
+              <img src="assets/img/logo-white.svg" alt="Émigré" class="icon icon-md mb-3">
             </a>
                     <p class="pr-xl-3">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
