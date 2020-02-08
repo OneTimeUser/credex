@@ -14,6 +14,7 @@
 body {
     color: black;
     font-family: 'Quattrocento Sans', apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --dark: black !important;
 }
 
 h1,
@@ -52,7 +53,11 @@ h3 {
 }
 
 .text-muted {
-    color: #B5EAFE !important;
+    color: #c9753d !important;
+}
+
+.text-dark {
+    color: black !important;
 }
 
 //temp solution for a section image dangling off into another section

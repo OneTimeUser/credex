@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-primary" data-sticky="top">
             <div class="container">
                 <a class="navbar-brand fade-page" href="index.html">
-            Émigré
+            <img src="assets/img/logo.svg" alt="Émigré" class="icon icon-md">
           </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
             <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
@@ -70,9 +70,9 @@
                             </li>
                         </ul>
                         <div class="text-center my-3">
-                            <h4 class="h3 mb-1">Contact Support</h4>
+                            <h4 class="h3 mb-1">Have a question?</h4>
                             <p>
-                                Please get in touch for any questions you may have. We typically reply within 24 hours.
+                                Use the form below to get in contact. We promise to answer as promptly as possible. Have you checked the <a href="pricing.html">FAQs</a> or learned about our <a href="process.html">Process</a>?
                             </p>
                         </div>
                         <form action="/forms/smtp.php" data-form-email novalidate>
@@ -83,7 +83,7 @@
                                 <input type="email" class="form-control" name="contact-email" placeholder="Email Address" required>
                             </div>
                             <div class="form-group">
-                                <textarea name="contact-box-message" rows="5" class="form-control" placeholder="Message" required></textarea>
+                                <textarea name="contact-box-message" rows="5" class="form-control" placeholder="Type your message here" required></textarea>
                             </div>
                             <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE"></div>
                             <div class="d-none alert alert-danger" role="alert" data-error-message>
@@ -111,7 +111,7 @@
             </div>
             <div class="row justify-content-center">
 
-                <div class="col-md-9 col-lg-8 col-xl-6">
+                <div class="col-md-9 col-lg-8">
                     <div class="text-center mb-4">
                         <h2 class="display-4">Let's Get Started!</h2>
                         <p class="lead">Fill out the form below to get started. After your submit, a counselor will get in touch with you to talk about next steps!
@@ -146,8 +146,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label>If you have a preferred credential evaluator, please name them below.</label>
-                                    <input name="contact-preference" type="text" class="form-control" required>
+                                    <label>Preferred credential evaluator, if any.</label>
+                                    <input name="contact-preference" type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -156,61 +156,61 @@
                                     <textarea class="form-control" name="contact-recipient" rows="3" placeholder="e.g. Canadian Immigration - January 1, 2020"></textarea>
                                 </div>
                             </div>
+                            <h6>Please list your relevant educational history. *</h6>
                             <div class="form-row">
-                                <label>Please list your relevant educational history.</label>
-                                <div class="form-group md-4">
+                                <div class="form-group col-md-4">
                                     <label>School Name</label>
-                                    <textarea class="form-control" name="contact-school-1" placeholder=" International University"></textarea>
+                                    <input type="text" name="contact-school-1" class="form-control" placeholder=" International University">
                                 </div>
-                                <div class="form-group md-3">
+                                <div class="form-group col-md-2">
                                     <label>Country</label>
-                                    <textarea class="form-control" name="contact-country-1" placeholder=" Australia"></textarea>
+                                    <input type="text" name="contact-country-1" class="form-control" placeholder=" Australia">
                                 </div>
-                                <div class="form-group md-4">
+                                <div class="form-group col-md-4">
                                     <label>Degree type</label>
-                                    <textarea class="form-control" name="contact-degree-1" placeholder=" Masters of Science"></textarea>
+                                    <input type="text" name="contact-degree-1" class="form-control" placeholder=" Masters of Science">
                                 </div>
-                                <div class="form-group">
-                                    <label>Award Year</label>
-                                    <textarea class="form-control" name="contact-year-1" placeholder=" 2020"></textarea>
+                                <div class="form-group col-md-2">
+                                    <label>Year</label>
+                                    <input type="text" name="contact-year-1" class="form-control" placeholder=" 2020">
                                 </div>
                             </div>
                             <div class="form-row">
 
-                                <div class="form-group md-4">
+                                <div class="form-group col-md-4">
                                     <label>School Name</label>
-                                    <textarea class="form-control" name="contact-school-2"></textarea>
+                                    <input type="text" class="form-control" name="contact-school-2">
                                 </div>
-                                <div class="form-group md-3">
+                                <div class="form-group col-md-2">
                                     <label>Country</label>
-                                    <textarea class="form-control" name="contact-country-2"></textarea>
+                                    <input type="text" class="form-control" name="contact-country-2">
                                 </div>
-                                <div class="form-group md-4">
+                                <div class="form-group col-md-4">
                                     <label>Degree type</label>
-                                    <textarea class="form-control" name="contact-degree-2"></textarea>
+                                    <input type="text" class="form-control" name="contact-degree-2">
                                 </div>
-                                <div class="form-group">
-                                    <label>Award Year</label>
-                                    <textarea class="form-control" name="contact-year-2"></textarea>
+                                <div class="form-group col-md-2">
+                                    <label>Year</label>
+                                    <input type="text" class="form-control" name="contact-year-2">
                                 </div>
                             </div>
                             <div class="form-row">
 
-                                <div class="form-group md-4">
+                                <div class="form-group col-md-4">
                                     <label>School Name</label>
-                                    <textarea class="form-control" name="contact-school-3"></textarea>
+                                    <input type="text" class="form-control" name="contact-school-3">
                                 </div>
-                                <div class="form-group md-3">
+                                <div class="form-group col-md-2">
                                     <label>Country</label>
-                                    <textarea class="form-control" name="contact-country-3"></textarea>
+                                    <input type="text" class="form-control" name="contact-country-3">
                                 </div>
-                                <div class="form-group md-4">
+                                <div class="form-group col-md-4">
                                     <label>Degree type</label>
-                                    <textarea class="form-control" name="contact-degree-3"></textarea>
+                                    <input type="text" class="form-control" name="contact-degree-3">
                                 </div>
-                                <div class="form-group">
-                                    <label>Award Year</label>
-                                    <textarea class="form-control" name="contact-year-3"></textarea>
+                                <div class="form-group col-md-2">
+                                    <label>Year</label>
+                                    <input type="text" class="form-control" name="contact-year-3">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -241,7 +241,7 @@
             </div>
         </div>
     </section>
-    <footer class="pb-4 bg-primary-3 text-dark">
+    <footer class="pb-4 bg-primary-3 text-light">
         <div class="container">
             <div class="row justify-content-between mb-5">
                 <div class="col-4">
@@ -249,7 +249,7 @@
               <img src="assets/img/logo-white.svg" alt="Émigré" class="icon icon-md mb-3">
             </a>
                     <p class="pr-xl-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        A friendly credential evaluation service you can trust.
                     </p>
                 </div>
                 <div class="col-4">
@@ -272,14 +272,14 @@
                         <li class="mb-3 d-flex">
                             <img class="icon" src="assets/img/icons/theme/communication/mail.svg" alt="mail icon" data-inject-svg />
                             <div class="ml-3">
-                                <a href="#">hello@company.io</a>
+                                <a href="mailto:info@emigre.works">info@emigre.works</a>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
                     <h5>Subscribe</h5>
-                    <p>The latest Leap news, articles, and resources, sent straight to your inbox every month.</p>
+                    <p>The latest Émigré news and resources, sent straight to your inbox.</p>
                     <form action="/forms/mailchimp.php" data-form-email novalidate>
                         <div class="form-row">
                             <div class="col-12">
@@ -287,7 +287,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="d-none alert alert-success" role="alert" data-success-message>
-                                    Thanks, a member of our team will be in touch shortly.
+                                    Thank you!
                                 </div>
                                 <div class="d-none alert alert-danger" role="alert" data-error-message>
                                     Please fill all fields correctly.
@@ -301,7 +301,7 @@
                             </div>
                         </div>
                     </form>
-                    <small class="text-muted form-text">We’ll never share your details. See our <a href="#">Privacy Policy</a>
+                    <small class="text-muted form-text">We’ll never share your details. See our <a href="utility-legal.html">Privacy Policy</a>
             </small>
 
                 </div>
@@ -341,7 +341,7 @@
 -->
             <div class="row justify-content-center">
                 <div class="col col-md-auto text-center">
-                    <small class="text-muted">&copy;2019 All Rights Reserved. Your Brand® is a registered trademark of Your Company</small>
+                    <small class="text-muted">&copy;2019 All Rights Reserved. Émigré® is a registered trademark of WM Inc.</small>
                 </div>
             </div>
         </div>

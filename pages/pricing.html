@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-primary" data-sticky="top">
             <div class="container">
                 <a class="navbar-brand fade-page" href="index.html">
-            Émigré
+            <img src="assets/img/logo.svg" alt="Émigré" class="icon icon-md">
           </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
             <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
@@ -32,8 +32,8 @@
                             <li class="nav-item">
                                 <a href="process.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Process</a>
                             </li>
-                            <li class="nav-item ">
-                                <a href="pricing.html" class="nav-link active" aria-expanded="false" aria-haspopup="true">Pricing</a>
+                            <li class="nav-item">
+                                <a href="pricing.html" class="nav-link" aria-expanded="false" aria-haspopup="true">Pricing</a>
                             </li>
                             <!--
 <li class="nav-item">
@@ -47,6 +47,62 @@
             </div>
         </nav>
     </div>
+    <div class="modal fade" id="contact-box-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img class="icon bg-dark" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
+                      </button>
+                    <div class="m-3">
+                        <ul class="avatars justify-content-center">
+                            <li>
+                                <img src="assets/img/avatars/male-1.jpg" alt="Avatar" class="avatar avatar-lg">
+                            </li>
+                            <li>
+                                <img src="assets/img/avatars/female-1.jpg" alt="Avatar" class="avatar avatar-lg">
+                            </li>
+                            <li>
+                                <img src="assets/img/avatars/male-2.jpg" alt="Avatar" class="avatar avatar-lg">
+                            </li>
+                            <li>
+                                <img src="assets/img/avatars/female-4.jpg" alt="Avatar" class="avatar avatar-lg">
+                            </li>
+                        </ul>
+                        <div class="text-center my-3">
+                            <h4 class="h3 mb-1">Have a question?</h4>
+                            <p>
+                                Use the form below to get in contact. We promise to answer as promptly as possible. Have you checked the <a href="pricing.html">FAQs</a> or learned about our <a href="process.html">Process</a>?
+                            </p>
+                        </div>
+                        <form action="/forms/smtp.php" data-form-email novalidate>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="contact-name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="contact-email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="contact-box-message" rows="5" class="form-control" placeholder="Type your message here" required></textarea>
+                            </div>
+                            <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE"></div>
+                            <div class="d-none alert alert-danger" role="alert" data-error-message>
+                                Please fill all fields correctly.
+                            </div>
+                            <div class="d-none alert alert-success" role="alert" data-success-message>
+                                Thanks, a member of our team will be in touch shortly.
+                            </div>
+                            <button type="submit" class="btn btn-block btn-primary btn-loading" data-loading-text="Sending">
+                            <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
+                            <span>Send</span>
+                          </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="bg-primary-alt header-inner o-hidden">
         <div class="container">
             <div class="row py-6 text-center justify-content-center align-items-center">
@@ -98,14 +154,14 @@
                                 <span>Includes Live Chat Assistance</span>
                             </li>
                         </ul>
-                        <a href="#" class="btn btn-outline-primary">
+                        <a href="gettingstarted.html" class="btn btn-outline-primary">
     Get Started!
   </a>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="NaN">
                     <div class="card card-body align-items-center shadow-3d">
-                        
+
                         <div class="pt-md-2">
                             <h4>Education</h4>
                         </div>
@@ -131,7 +187,7 @@
                                 <span>Includes Live Chat Assistance</span>
                             </li>
                         </ul>
-                        <a href="#" class="btn btn-primary">
+                        <a href="gettingstarted.html" class="btn btn-primary">
     Get Started!
   </a>
                     </div>
@@ -155,7 +211,7 @@
                                 <span>Includes Live Chat Assistance</span>
                             </li>
                         </ul>
-                        <a href="#" class="btn btn-outline-primary">
+                        <a href="gettingstarted.html" class="btn btn-outline-primary">
     Inquire!
   </a>
                     </div>
@@ -361,13 +417,13 @@
                             </div>
                         </div>
                     </div>
-                    <span><h6>Still have questions? <a href="#">Get in touch</a></h6>
+                    <span><h6>Still have questions? <a data-toggle="modal" data-target="#contact-box-modal" href="#">Get in touch</a></h6>
             </span>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="pb-4 bg-primary-3 text-dark">
+    <footer class="pb-4 bg-primary-3 text-light">
         <div class="container">
             <div class="row justify-content-between mb-5">
                 <div class="col-4">
@@ -375,7 +431,7 @@
               <img src="assets/img/logo-white.svg" alt="Émigré" class="icon icon-md mb-3">
             </a>
                     <p class="pr-xl-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        A friendly credential evaluation service you can trust.
                     </p>
                 </div>
                 <div class="col-4">
@@ -398,14 +454,14 @@
                         <li class="mb-3 d-flex">
                             <img class="icon" src="assets/img/icons/theme/communication/mail.svg" alt="mail icon" data-inject-svg />
                             <div class="ml-3">
-                                <a href="#">hello@company.io</a>
+                                <a href="mailto:info@emigre.works">info@emigre.works</a>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-5 col-xl-4 mt-3 mt-lg-0">
                     <h5>Subscribe</h5>
-                    <p>The latest Leap news, articles, and resources, sent straight to your inbox every month.</p>
+                    <p>The latest Émigré news and resources, sent straight to your inbox.</p>
                     <form action="/forms/mailchimp.php" data-form-email novalidate>
                         <div class="form-row">
                             <div class="col-12">
@@ -413,7 +469,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="d-none alert alert-success" role="alert" data-success-message>
-                                    Thanks, a member of our team will be in touch shortly.
+                                    Thank you!
                                 </div>
                                 <div class="d-none alert alert-danger" role="alert" data-error-message>
                                     Please fill all fields correctly.
@@ -427,7 +483,7 @@
                             </div>
                         </div>
                     </form>
-                    <small class="text-muted form-text">We’ll never share your details. See our <a href="#">Privacy Policy</a>
+                    <small class="text-muted form-text">We’ll never share your details. See our <a href="utility-legal.html">Privacy Policy</a>
             </small>
 
                 </div>
@@ -467,7 +523,7 @@
 -->
             <div class="row justify-content-center">
                 <div class="col col-md-auto text-center">
-                    <small class="text-muted">&copy;2019 All Rights Reserved. Your Brand® is a registered trademark of Your Company</small>
+                    <small class="text-muted">&copy;2019 All Rights Reserved. Émigré® is a registered trademark of WM Inc.</small>
                 </div>
             </div>
         </div>
