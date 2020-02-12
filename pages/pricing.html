@@ -69,28 +69,30 @@
                                 Use the form below to get in contact. We promise to answer as promptly as possible. Have you checked the <a href="pricing.html">FAQs</a> or learned about our <a href="process.html">Process</a>?
                             </p>
                         </div>
-                        <form action="/forms/smtp.php" data-form-email novalidate>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScxfgNmgv5pbiNVgFXkBhzfGZjCqwUBsXF4TGBe1-k3LAgD3w/formResponse?" name="cform" id="cform" enctype="text/plain" target="c_hidden_iframe" onsubmit="c_submitted=true;" data-form-email novalidate>
                             <div class="form-group">
-                                <input type="text" class="form-control" name="contact-name" placeholder="Your Name" required>
+                                <input type="text" class="form-control" name="entry.2036589812" id="entry.2036589812" placeholder="Your Name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="contact-email" placeholder="Email Address" required>
+                                <input type="email" class="form-control" name="entry.141188244" id="entry.141188244" placeholder="Email Address" required>
                             </div>
                             <div class="form-group">
-                                <textarea name="contact-box-message" rows="5" class="form-control" placeholder="Type your message here" required></textarea>
+                                <textarea rows="5" class="form-control" name="entry.946742216" id="entry.946742216" placeholder="Type your message here" required></textarea>
                             </div>
-                            <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE"></div>
+<!--                            <div data-recaptcha data-sitekey="6LcVTdgUAAAAAJ4sxLRNGPCctnQq_SCdsa3eizB6"></div>-->
                             <div class="d-none alert alert-danger" role="alert" data-error-message>
                                 Please fill all fields correctly.
                             </div>
                             <div class="d-none alert alert-success" role="alert" data-success-message>
                                 Thanks, a member of our team will be in touch shortly.
                             </div>
-                            <button type="submit" class="btn btn-block btn-primary btn-loading" data-loading-text="Sending">
+                            <button type="submit" value="Submit" class="btn btn-block btn-primary btn-loading" data-loading-text="Sending">
                             <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
                             <span>Send</span>
                           </button>
+                            
                         </form>
+                        <iframe name="c_hidden_iframe" id="c_hidden_iframe" style="display:none;" onload="if(c_submitted) {}"></iframe>
                     </div>
                 </div>
             </div>
@@ -380,7 +382,7 @@
                             <div class="collapse" id="panel-1">
                                 <div class="pt-3">
                                     <p class="mb-0">
-                                        While we assess each case on an individual basis, we as that your information be complete upon submission and receipt of payment of services. This is to ensure that we give you accurate and appropriate information in a timely manner.
+                                        While we assess each case on an individual basis, we ask that your information be complete upon submission and receipt of payment of services. This is to ensure that we give you accurate and appropriate information in a timely manner.
                                     </p>
                                 </div>
                             </div>
@@ -451,7 +453,7 @@
               <img src="assets/img/logo-white.svg" alt="Émigré" class="icon icon-md mb-3">
             </a>
                     <p class="pr-xl-3">
-                        A friendly credential evaluation service you can trust.
+                        A friendly credential evaluation consultation service you can trust.
                     </p>
                 </div>
                 <div class="col-4">
@@ -494,8 +496,10 @@
                                 <div class="d-none alert alert-danger" role="alert" data-error-message>
                                     Please fill all fields correctly.
                                 </div>
+<!--
                                 <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible" data-badge="bottomleft">
                                 </div>
+-->
                                 <button type="submit" class="btn btn-primary btn-loading btn-block" data-loading-text="Sending">
                     <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
                     <span>Subscribe</span>
@@ -553,6 +557,16 @@
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    
+    <!-- Form to gforms -->
+    <script type="text/javascript">var c_submitted=false;</script>
+<script type="text/javascript">
+
+    $('#cform').on('submit', function(e) {
+  $('#cform *').fadeOut(2000);
+  $('#cform').prepend('Your submission has been processed...');
+  });
+</script>
 
     <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 
