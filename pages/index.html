@@ -9,6 +9,10 @@
     <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Corben|Quattrocento+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript">
+        let c_submitted = false;
+
+    </script>
 </head>
 
 <body>
@@ -92,7 +96,7 @@
                           </button>
 
                         </form>
-                        <iframe name="c_hidden_iframe" id="c_hidden_iframe" style="display:none;" onload="if(c_submitted) {}"></iframe>
+                        <iframe name="c_hidden_iframe" id="c_hidden_iframe" style="display:none;" onload="if(c_submitted){}"></iframe>
                     </div>
                 </div>
             </div>
@@ -360,6 +364,10 @@
                                 <input type="email" class="form-control mb-2" placeholder="Email Address" name="EMAIL" id="mce-EMAIL" required>
                             </div>
                             <div class="col-12">
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
                                 <div class="d-none alert alert-success" role="alert" data-success-message>
                                     Thank you!
                                 </div>
@@ -456,10 +464,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
     <!-- Form to gforms -->
-    <script type="text/javascript">
-        var c_submitted = false;
 
-    </script>
     <script type="text/javascript">
         $('#cform').on('submit', function(e) {
             $('#cform *').fadeOut(2000);
