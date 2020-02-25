@@ -62,8 +62,7 @@ h3 {
 }
 
 .mail-list-home {
-    background-position: top 50% left 10%,
-    bottom 50% right 10%;
+    background-position: top 31% left 10%, top 31% right 10%;
     background-size: 100px;
     background-repeat: no-repeat;
     background-image: url(../img/email_letter.png),
@@ -90,7 +89,7 @@ h3 {
     box-shadow: inset 0 -263px 0 white;
 }
 
-//// NAVIGATION BAR
+/// NAVIGATION BAR
 .navbar {
     border-bottom: none;
 }
